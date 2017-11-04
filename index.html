@@ -5,8 +5,116 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="site-nav">
+          <li><a href="info.html"> Информация</a></li>
+          <li><a href="news.html"> Фото и видео</a></li>
+          <li><a href="full-map.html">Карта штата</a></li>
+          <li><a href="hotel.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <a class="main-header-logo">
+      <img src="img/index-logo.svg" width="50" height="50" alt="Логотип «Седона»">
+      </a>
+    </header>
+    <main>
+      <section class="sedona">
+        <img src="img/sedona.jpg" width='1000' height="400" alt="Welcome to the Sedona">
+      </section>
+      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
+      <p class="reasons">Рассмотри 5 причин, по которым седона круче, чем гранд каньон</p>
+      <section class='reason'>
+          <h2 class="visually-hidden">Факты о Седоне</h2>
+        <ul>
+          <li class="reason-one">
+            <h3>Настоящий городок</h3>
+            <p>№1</p>
+            <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+          </li>
+          <li class="reason-one-image">
+            <img src="img/citi.jpg" alt="Городок Седона" width="500" height="200">
+          </li>
+          <li class="motel">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+          </li>
+          <li class="food">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="Souvenirs">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="reason-two">
+            <h3>Там есть мост дьявола</h3>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li class="reason-two-image">
+            <img src="img/bridge.jpg" alt="Городок Седона" width="500" height="200">
+          </li>
+          <li class="reason-three">
+            <h3>Небольшая площадь</h3>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reason-four">
+            <h3>Красивая дорога</h3>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="reason-five">
+            <h3>Мало туристов</h3>
+            <p>№5</p>
+            <p>Большинство едет в гранд каньое и толпится там</p>
+          </li>
+        </ul>
+        </section>
+        <section class="booking">
+          <h2 class="visually-hidden">Забронировать дату поездки</h2>
+          <h3>Заинтересовались?</h3>
+          <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+          <button type="button" name="button-visible-form">Поиск гостинницы в седона</button>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Карта проезда</h2>
+          <img src="img/map/jpg" width="800" height="400" alt="Карта проезда">
+        </section>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        <footer class="main-footer">
+          <p>#visitsedona</p>
+          <div class="footer-social">
+            <ul>
+              <li><a class="social-button" href="#">Твиттер</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Ютуб</a></li>
+             </ul>
+          </div>
+          <p class="footer-copyright">
+            <b>website  by</b>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="logo-copyright.jpg" width="150" height="50" alt="htmlacademy.ru">
+            </a>
+          </p>
+        </footer>
+        <section class="booking-form">
+          <h2 class="visually-hidden">Форма брони</h2>
+          <form class="main-booking-form" action="index.html" method="post">
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="date" name="arrival-date" id="arrival-date" value=""><br>
+            <label for="departure-date">Дата выезд:</label>
+            <input type="date" name="departure-date" id="departure-date" value=""><br>
+            <label for="grownup">Взрослые:</label>
+            <input type="number" name="grownup" id="grownup" value="2" min="1" max="10" step="1">
+            <label for="kid">Взрослые:</label>
+            <input type="number" name="kid" id="kid" value="0" min="0" max="10" step="1"><br>
+            <button type="button" name="find-booking">Найти</button>
+          </form>
+
+        </section>
+    </main>
 
   </body>
 </html>
