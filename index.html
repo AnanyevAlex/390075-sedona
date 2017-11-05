@@ -15,7 +15,7 @@
         </ul>
       </nav>
       <a class="main-header-logo">
-      <img src="img/index-logo.svg" width="50" height="50" alt="Логотип «Седона»">
+        <img src="img/index-logo.svg" width="50" height="50" alt="Логотип «Седона»">
       </a>
     </header>
     <main>
@@ -25,7 +25,7 @@
       <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
       <p class="reasons">Рассмотри 5 причин, по которым седона круче, чем гранд каньон</p>
       <section class='reason'>
-          <h2 class="visually-hidden">Факты о Седоне</h2>
+        <h2 class="visually-hidden">Факты о Седоне</h2>
         <ul>
           <li class="reason-one">
             <h3>Настоящий городок</h3>
@@ -71,50 +71,50 @@
             <p>Большинство едет в гранд каньое и толпится там</p>
           </li>
         </ul>
-        </section>
-        <section class="booking">
-          <h2 class="visually-hidden">Забронировать дату поездки</h2>
-          <h3>Заинтересовались?</h3>
-          <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-          <button type="button" name="button-visible-form">Поиск гостинницы в седона</button>
-        </section>
-        <section class="map">
-          <h2 class="visually-hidden">Карта проезда</h2>
-          <img src="img/map/jpg" width="800" height="400" alt="Карта проезда">
-        </section>
-
-        <footer class="main-footer">
-          <p>#visitsedona</p>
-          <div class="footer-social">
-            <ul>
-              <li><a class="social-button" href="#">Твиттер</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Ютуб</a></li>
-             </ul>
-          </div>
-          <p class="footer-copyright">
-            <b>website  by</b>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="logo-copyright.jpg" width="150" height="50" alt="htmlacademy.ru">
-            </a>
-          </p>
-        </footer>
-        <section class="booking-form">
-          <h2 class="visually-hidden">Форма брони</h2>
-          <form class="main-booking-form" action="index.html" method="post">
-            <label for="arrival-date">Дата заезда:</label>
-            <input type="date" name="arrival-date" id="arrival-date" value=""><br>
-            <label for="departure-date">Дата выезд:</label>
-            <input type="date" name="departure-date" id="departure-date" value=""><br>
-            <label for="grownup">Взрослые:</label>
-            <input type="number" name="grownup" id="grownup" value="2" min="1" max="10" step="1">
-            <label for="kid">Взрослые:</label>
-            <input type="number" name="kid" id="kid" value="0" min="0" max="10" step="1"><br>
-            <button type="button" name="find-booking">Найти</button>
-          </form>
-
-        </section>
+      </section>
+      <section class="booking">
+        <h2 class="visually-hidden">Забронировать дату поездки</h2>
+        <h3>Заинтересовались?</h3>
+        <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <button type="button" name="button-visible-form">Поиск гостинницы в седона</button>
+        <form class="main-booking-form" action="index.html" method="post">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="date" name="arrival-date" id="arrival-date" value="">
+          <button class="calendar" type="button" name="button"></button>
+          <label for="departure-date">Дата выезд:</label>
+          <input type="date" name="departure-date" id="departure-date" value="">
+          <button class="calendar" type="button" name="button"></button>
+          <label for="grownup">Взрослые:</label>
+          <input type="number" name="grownup" id="grownup" value="2" min="1" max="10" step="1">
+          <button class="amount-down" type="button" name="button"></button>
+          <button class="amount-up" type="button" name="button"></button>
+          <label for="kid">Взрослые:</label>
+          <input type="number" name="kid" id="kid" value="0" min="0" max="10" step="1">
+          <button class="amount-down" type="button" name="button"></button>
+          <button class="amount-up" type="button" name="button"></button>
+          <button type="submit" name="find-booking">Найти</button>
+        </form>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта проезда</h2>
+        <img src="img/map/jpg" width="800" height="400" alt="Карта проезда">
+      </section>
     </main>
-
+    <footer class="main-footer">
+      <p><a href="#"></a> #visitsedona</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>website  by</b>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="logo-copyright.jpg" width="150" height="50" alt="htmlacademy.ru">
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
