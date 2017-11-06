@@ -23,8 +23,7 @@
       <section class="filter-hotel">
         <h2 class="visually-hidden">Фильтр отелей.</h2>
         <form class="filter-form" action="index.html" method="post">
-          <div class="checkbox1">
-            <fieldset>
+            <fieldset class="filter-checkbox">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
@@ -33,9 +32,7 @@
               <input type="checkbox" name="wifi" id="wifi">
               <label for="wifi">WI-FI</label>
             </fieldset>
-          </div>
-          <div class="checkbox2">
-            <fieldset>
+            <fieldset class="filter-checkbox">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостинница</label>
@@ -44,7 +41,6 @@
               <input type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">Апартаменты</label>
             </fieldset>
-          </div>
           <div class="cost-range">
             <label>Стоимость в сутки (р)</label>
             <input type="number" class="cost-min" name="cost-min" value="0">
@@ -136,7 +132,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p><a href="#"></a> #visitsedona</p>
+      <p><a href="#">#visitsedona</a></p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>

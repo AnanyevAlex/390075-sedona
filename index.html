@@ -27,48 +27,44 @@
       <section class='reason'>
         <h2 class="visually-hidden">Факты о Седоне</h2>
         <ul>
-          <li class="reason-one">
+          <li class="reason reason-image">
             <h3>Настоящий городок</h3>
             <p>№1</p>
             <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
-          </li>
-          <li class="reason-one-image">
             <img src="img/citi.jpg" alt="Городок Седона" width="500" height="200">
           </li>
-          <li class="motel">
+          <li class="reason reason-image">
+            <h3>Там есть мост дьявола</h3>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <img src="img/bridge.jpg" alt="Городок Седона" width="500" height="200">
+          </li>
+          <li class="reason">
+            <h3>Небольшая площадь</h3>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reason">
+            <h3>Красивая дорога</h3>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="features">
+            <h3>Мало туристов</h3>
+            <p>№5</p>
+            <p>Большинство едет в гранд каньое и толпится там</p>
+          </li>
+          <li class="features">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
           </li>
-          <li class="food">
+          <li class="features">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="Souvenirs">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="reason-two">
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li class="reason-two-image">
-            <img src="img/bridge.jpg" alt="Городок Седона" width="500" height="200">
-          </li>
-          <li class="reason-three">
-            <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="reason-four">
-            <h3>Красивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="reason-five">
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинство едет в гранд каньое и толпится там</p>
           </li>
         </ul>
       </section>
@@ -80,18 +76,18 @@
         <form class="main-booking-form" action="index.html" method="post">
           <label for="arrival-date">Дата заезда:</label>
           <input type="date" name="arrival-date" id="arrival-date" value="">
-          <button class="calendar" type="button" name="button"></button>
+          <button class="calendar" type="button" name="button">календарь</button>
           <label for="departure-date">Дата выезд:</label>
           <input type="date" name="departure-date" id="departure-date" value="">
-          <button class="calendar" type="button" name="button"></button>
+          <button class="calendar" type="button" name="button">календарь</button>
           <label for="grownup">Взрослые:</label>
+          <button class="amount-down" type="button" name="button">-</button>
           <input type="number" name="grownup" id="grownup" value="2" min="1" max="10" step="1">
-          <button class="amount-down" type="button" name="button"></button>
-          <button class="amount-up" type="button" name="button"></button>
-          <label for="kid">Взрослые:</label>
+          <button class="amount-up" type="button" name="button">+</button>
+          <label for="kid">Дети:</label>
+          <button class="amount-down" type="button" name="button">-</button>
           <input type="number" name="kid" id="kid" value="0" min="0" max="10" step="1">
-          <button class="amount-down" type="button" name="button"></button>
-          <button class="amount-up" type="button" name="button"></button>
+          <button class="amount-up" type="button" name="button">+</button>
           <button type="submit" name="find-booking">Найти</button>
         </form>
       </section>
@@ -101,7 +97,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p><a href="#"></a> #visitsedona</p>
+      <p><a href="#">#visitsedona</a></p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
