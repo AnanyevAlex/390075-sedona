@@ -15,12 +15,12 @@
         </ul>
       </nav>
       <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="50" height="50" alt="Логотип «Седона»">
+        <img src="img/index-logo.png" width="50" height="50" alt="Логотип «Седона»">
       </a>
     </header>
     <main>
       <section class="sedona">
-        <img src="img/sedona.jpg" width='1000' height="400" alt="Welcome to the Sedona">
+        <img src="img/sedona-bg.jpg" width='1000' height="400" alt="Welcome to the Sedona">
       </section>
       <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
       <p class="reasons">Рассмотри 5 причин, по которым седона круче, чем гранд каньон</p>
@@ -31,7 +31,7 @@
             <h3>Настоящий городок</h3>
             <p>№1</p>
             <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
-            <img src="img/citi.jpg" alt="Городок Седона" width="500" height="200">
+            <img src="img/city.jpg" alt="Городок Седона" width="500" height="200">
           </li>
           <li class="reason reason-image">
             <h3>Там есть мост дьявола</h3>
@@ -49,22 +49,26 @@
             <p>№4</p>
             <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </li>
-          <li class="features">
+          <li class="reason">
             <h3>Мало туристов</h3>
             <p>№5</p>
             <p>Большинство едет в гранд каньое и толпится там</p>
           </li>
           <li class="features">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-          </li>
-          <li class="features">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="Souvenirs">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <ul>
+              <li class="features-block">
+                <h3>Жилье</h3>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+              </li>
+              <li class="features-block">
+                <h3>Еда</h3>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features-block">
+                <h3>Сувениры</h3>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -82,11 +86,11 @@
           <button class="calendar" type="button" name="button">календарь</button>
           <label for="grownup">Взрослые:</label>
           <button class="amount-down" type="button" name="button">-</button>
-          <input type="number" name="grownup" id="grownup" value="2" min="1" max="10" step="1">
+          <input type="text" name="grownup" id="grownup" value="2">
           <button class="amount-up" type="button" name="button">+</button>
           <label for="kid">Дети:</label>
           <button class="amount-down" type="button" name="button">-</button>
-          <input type="number" name="kid" id="kid" value="0" min="0" max="10" step="1">
+          <input type="text" name="kid" id="kid" value="0">
           <button class="amount-up" type="button" name="button">+</button>
           <button type="submit" name="find-booking">Найти</button>
         </form>
@@ -108,7 +112,7 @@
       <p class="footer-copyright">
         <b>website  by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo-copyright.jpg" width="150" height="50" alt="htmlacademy.ru">
+          <img src="logo-copyright.svg" width="150" height="50" alt="htmlacademy.ru">
         </a>
       </p>
     </footer>
