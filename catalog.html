@@ -15,30 +15,30 @@
         </ul>
       </nav>
       <a class="main-header-logo" href="index.html">
-        <img src="img/index-logo.png" width="50" height="50" alt="Логотип «Седона»">
+        <img src="img/logo-index.png" width="50" height="50" alt="Логотип «Седона»">
       </a>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Подбор отеля</h1>
       <section class="filter-hotel">
         <h2 class="visually-hidden">Фильтр отелей.</h2>
-        <form class="filter-form" action="index.html" method="post">
+        <form class="filter-form" action="index.html" method="get">
             <fieldset class="filter-checkbox">
               <legend>Инфраструктура:</legend>
-              <input type="checkbox" name="pool" id="pool" checked>
+              <input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
-              <input type="checkbox" name="parking" id="parking">
+              <input class="visually-hidden" type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
-              <input type="checkbox" name="wifi" id="wifi">
+              <input class="visually-hidden" type="checkbox" name="wifi" id="wifi">
               <label for="wifi">WI-FI</label>
             </fieldset>
             <fieldset class="filter-checkbox">
               <legend>Инфраструктура:</legend>
-              <input type="checkbox" name="hotel" id="hotel" checked>
+              <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостинница</label>
-              <input type="checkbox" name="motel" id="motel" checked>
+              <input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
-              <input type="checkbox" name="apartments" id="apartments" checked>
+              <input class="visually-hidden" type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">Апартаменты</label>
             </fieldset>
           <div class="cost-range">
@@ -143,7 +143,7 @@
       <p class="footer-copyright">
         <b>website  by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo-copyright.jpg" width="150" height="50" alt="htmlacademy.ru">
+          <img src="logo-copyright.svg" width="150" height="50" alt="htmlacademy.ru">
         </a>
       </p>
     </footer>
