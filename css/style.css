@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-find-hotel {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
+}
+
+.button-booking {
+  padding: 8px 16px;
+  background-color: #766357;
+}
+
+.button-find {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
+}
+
+.button-more {
+  padding: 8px 17px;
+  background-color: #81b3d2;
+}
+
+.button-show {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  width: 141px;
+  height: 40px;
+}
+
+.button-show:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button-find-hotel:hover,
+.button-booking:hover {
+  background-color: #604e43;
+}
+
+.button-find-hotel:active,
+.button-booking:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.button-find:hover,
+.button-more:hover {
+  background-color: #669ec0;
+}
+
+.button-find:active,
+.button-more:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.main-nav {
+  font-size: 14px;
+  color: #000000;
+  line-height: 26px;
+}
+
+.site-nav {
+  list-style: none;
+}
+
+.site-nav a{
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.site-nav a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.site-nav a:active {
+  color: rgba(0, 0, 0, 0.302)
+}
+
+.site-nav .actived {
+  color: rgb(118, 99, 87);
+}
+
+.sedona {
+  position: relative;
+  text-align: center;
+  height: 700px;
+  width: 100%;
+  background-image: url("../img/bg-sedona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sedona .sedona-decore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sedona .sedona-text {
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reasons {
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+
+.reason-list,
+.features-list,
+.sorting,
+.hotel-list,
+.rating-star {
+  list-style: none;
+}
+
+.reason-item,
+.features-item,
+.hotel-info p {
+  color: rgb(51, 51, 51);
+  text-align: center;
+  line-height: 21px;
+}
+
+.reason-item h3,
+.features-item h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reason-image {
+  background-color: #81b3d2;
+  color: #fffff;
+}
+
+.booking h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+}
+
+.booking p {
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+.main-booking-form input {
+  padding-left: 13px;
+  font: inherit;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.main-booking-form input:hover {
+  background-color: #ebebeb;
+}
+
+.main-booking-form input:focus {
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  outline: none;
+}
+
+.filter-hotel {
+  color: #ffffff;
+  background-color: #414a51;
+  background-image: url("../img/bg-filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hotels h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.hotels > p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting a {
+  font: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting a:hover {
+  color: #81b3d2;
+}
+
+.sorting a:active {
+  color: #000000;
+  border: none;
+}
+
+.sorting .actived{
+  color: #81b3d2;
+  border: none;
+}
+
+.rating-hotel .rating {
+  color: #666666;
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 27px;
+  text-align: center;
+}
+
+.hotels .hotel-name {
+  font: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotels .hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotels .hotel-name:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.main-footer .visitsedona {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.visitsedona a {
+  color: #000000;
+}
+
+.main-footer .social-list {
+  list-style: none;
+  text-align: center;
+}
+.social-list a {
+  color: #000000;
+}
+
+.footer-copyright {
+  text-align: center;
+}

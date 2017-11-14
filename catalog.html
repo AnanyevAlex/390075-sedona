@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +14,7 @@
           <li><a href="info.html"> Информация</a></li>
           <li><a href="news.html"> Фото и видео</a></li>
           <li><a href="full-map.html">Карта штата</a></li>
-          <li><a href="hotel.html">Гостиницы</a></li>
+          <li><a href="#" class="actived">Гостиницы</a></li>
         </ul>
       </nav>
       <a class="main-header-logo" href="index.html">
@@ -46,13 +49,13 @@
             <input type="number" class="cost-min" name="cost-min" value="0">
             <input type="number" class="cost-max" name="cost-max" value="3000">
             <input type="range" name="cost" min="0" max="5000" step="100">
-            <button type="submit" name="button">Показать</button>
+            <button class="button button-show" type="submit" name="button">Показать</button>
           </div>
         </form>
       </section>
       <section class="hotels">
         <h2 class="visually-hidden">Список отелей.</h2>
-        <p>Найдено: 3</p>
+        <h3>Найдено: 3</h3>
         <p>Сортировка:</p>
         <ul class="sorting">
           <li> <a class="actived" href="#">По цене</a></li>
@@ -72,8 +75,8 @@
               <a class="hotel-name" href="#">Amara resort & spa</a>
               <p>Гостинница</p>
               <p>от 4000 р.</p>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button button-more" href="#">подробнее</a>
+              <a class="button button-booking" href="#">Забронировать</a>
             </div>
             <div class="rating-hotel">
               <ul class="rating-star">
@@ -95,8 +98,8 @@
               <a class="hotel-name" href="#">desert quail inn</a>
               <p>мотель</p>
               <p>от 3000 р.</p>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button button-more" href="#">подробнее</a>
+              <a class="button button-booking" href="#">Забронировать</a>
             </div>
             <div class="rating-hotel">
               <ul class="rating-star">
@@ -117,10 +120,10 @@
               <a class="hotel-name" href="#">villas at poco diablo</a>
               <p>Аппартаменты</p>
               <p>от 2000 р.</p>
-              <a class="button" href="#">подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button button-more" href="#">подробнее</a>
+              <a class="button button-booking" href="#">Забронировать</a>
             </div>
-            <div class="hotel-rating">
+            <div class="rating-hotel">
               <ul class="rating-star">
                 <li>*</li>
                 <li>*</li>
@@ -132,9 +135,9 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p><a href="#">#visitsedona</a></p>
+      <p class="visitsedona"><a href="#">#visitsedona</a></p>
       <div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
           <li><a class="social-button" href="#">Youtube</a></li>
@@ -143,7 +146,7 @@
       <p class="footer-copyright">
         <b>website  by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="logo-copyright.svg" width="150" height="50" alt="htmlacademy.ru">
+          <img src="logo-copyright.svg" width="150" height="50" alt="htmlacademy">
         </a>
       </p>
     </footer>
