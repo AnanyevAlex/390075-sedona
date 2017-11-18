@@ -111,20 +111,27 @@ a {
 }
 
 .sedona {
-  position: relative;
-  text-align: center;
+  min-width: 900px;
+  max-width: 1200px;
   height: 700px;
-  width: 100%;
+  text-align: center;
   background-image: url("../img/bg-sedona.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.sedona .sedona-decore {
+.sedona:after {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 57px;
+  background-image: url("../img/bg-sedona-decor.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
 }
 
 .sedona .sedona-text {
@@ -167,7 +174,7 @@ h1 {
 
 .reason-image {
   background-color: #81b3d2;
-  color: #fffff;
+  color: #ffffff;
 }
 
 .booking h3 {
@@ -197,8 +204,7 @@ h1 {
 
 .main-booking-form input:focus {
   background-color: transparent;
-  border: 2px solid #e5e5e5;
-  outline: none;
+  outline: 2px solid #e5e5e5;
 }
 
 .filter-hotel {
