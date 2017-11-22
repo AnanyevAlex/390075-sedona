@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -14,6 +15,10 @@ a {
 
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .button {
   font: inherit;
   text-align: center;
@@ -24,6 +29,11 @@ a {
 }
 
 .button-find-hotel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   font-size: 21px;
   line-height: 26px;
   background-color: #766357;
@@ -84,13 +94,47 @@ a {
 }
 
 .main-nav {
+  position: relative;
+  height: 56px;
+  width: 100%;
+  max-width: 1200px;
   font-size: 14px;
   color: #000000;
   line-height: 26px;
 }
 
 .site-nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-nav li {
+  width: 20%;
+}
+
+.site-nav li:nth-child(1),
+.site-nav li:nth-child(1) {
+  text-align: left;
+
+}
+.site-nav li:nth-child(3),
+.site-nav li:nth-child(4) {
+  text-align: right;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1;
 }
 
 .site-nav a{
@@ -113,7 +157,7 @@ a {
 .sedona {
   min-width: 900px;
   max-width: 1200px;
-  height: 700px;
+  height: 509px;
   text-align: center;
   background-image: url("../img/bg-sedona.jpg");
   background-size: cover;
@@ -139,6 +183,8 @@ a {
 }
 
 h1 {
+  margin-top: 60px;
+  margin-bottom: 32px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -156,6 +202,78 @@ h1 {
 .hotel-list,
 .rating-star {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.reason-list {
+  margin: 0;
+  margin-top: 58px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.reason-image {
+  display: flex;
+  width: 100%;
+  min-height: 258px;
+}
+
+.reason-item {
+  width: 33.3%;
+  min-height: 258px;
+  background-color: #eeeeee;
+}
+
+.reason-one-image {
+  background-image: url("../img/city.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 77%;
+
+}
+
+.reason-blue {
+  text-align: center;
+  width: 33%;
+
+}
+
+.reason-two-image {
+  background-image: url("../img/bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  width: 77%;
+}
+
+.reason-list li:not(:nth-child(1)) {
+  order: 2;
+}
+
+.reason-list li:nth-child(6) {
+  order: 1;
+}
+
+.features-list {
+  display: flex;
+  min-width: 900px;
+  min-width: 1200px;
+  min-height: 330px;
+}
+
+.features-item {
+  width: 33.4%;
+  min-height: 258px;
+}
+
+.reason-image {
+  width: 100%
 }
 
 .reason-item,
@@ -177,7 +295,16 @@ h1 {
   color: #ffffff;
 }
 
+.booking {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 293px;
+
+}
+
 .booking h3 {
+  margin: 0px;
+  padding-top: 58px;
   font-size: 30px;
   font-weight: bold;
   line-height: 36px;
@@ -187,6 +314,19 @@ h1 {
 .booking p {
   color: rgb(51, 51, 51);
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.main-booking-form {
+  position: absolute;
+  bottom: -394px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 568px;
+  height: 396px;
+  background-color: #ffffff;
 }
 
 .main-booking-form input {
@@ -207,12 +347,29 @@ h1 {
   outline: 2px solid #e5e5e5;
 }
 
+.map {
+  min-width: 900px;
+  max-width: 1200px;
+  min-width: 595px;
+}
+
 .filter-hotel {
   color: #ffffff;
   background-color: #414a51;
   background-image: url("../img/bg-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.sorting-hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid red;
+}
+
+.sorting {
+  display: flex;
+  margin-left: 457px;
 }
 
 .hotels h3 {
@@ -247,6 +404,16 @@ h1 {
   border: none;
 }
 
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-list li {
+  width: 100%;
+  outline: 2px solid black;
+}
+
 .rating-hotel .rating {
   color: #666666;
   background-color: #f2f2f2;
@@ -270,14 +437,24 @@ h1 {
   color: rgba(0, 0, 0, 0.302);
 }
 
-.main-footer .visitsedona {
+.visitsedona a {
+  color: #000000;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hashtag-sedona {
+  width: 33.3%;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
 }
 
-.visitsedona a {
-  color: #000000;
+.footer-social {
+  width: 33.3%
 }
 
 .main-footer .social-list {
@@ -289,5 +466,6 @@ h1 {
 }
 
 .footer-copyright {
+  width: 33.3%;
   text-align: center;
 }
