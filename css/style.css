@@ -1,13 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  min-width: 768px;
+  margin: 0 auto;
 }
 
 a {
@@ -37,8 +43,8 @@ a {
   font-size: 21px;
   line-height: 26px;
   background-color: #766357;
-  width: 568px;
-  height: 86px;
+  width: 100%;
+  height: 100%;
 }
 
 .button-booking {
@@ -79,7 +85,7 @@ a {
 .button-find-hotel:active,
 .button-booking:active {
   background-color: #503e33;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-find:hover,
@@ -90,7 +96,7 @@ a {
 .button-find:active,
 .button-more:active {
   background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-nav {
@@ -107,7 +113,7 @@ a {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 6%;
   padding: 0;
   list-style: none;
 }
@@ -155,9 +161,8 @@ a {
 }
 
 .sedona {
-  min-width: 900px;
-  max-width: 1200px;
   height: 509px;
+  padding: 80px;
   text-align: center;
   background-image: url("../img/bg-sedona.jpg");
   background-size: cover;
@@ -176,10 +181,6 @@ a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
-}
-
-.sedona .sedona-text {
-  margin-top: 80px;
 }
 
 h1 {
@@ -222,7 +223,7 @@ h1 {
 }
 
 .reason-item {
-  width: 33.3%;
+  width: 33.333333%;
   min-height: 258px;
   background-color: #eeeeee;
 }
@@ -233,7 +234,7 @@ h1 {
   background-size: cover;
   margin: 0;
   padding: 0;
-  width: 77%;
+  width: 66.666666%;
 
 }
 
@@ -249,7 +250,7 @@ h1 {
   background-size: cover;
   margin: 0;
   padding: 0;
-  width: 77%;
+  width: 66.666666%;
 }
 
 .reason-list li:not(:nth-child(1)) {
@@ -262,13 +263,13 @@ h1 {
 
 .features-list {
   display: flex;
-  min-width: 900px;
+  min-width: 768px;
   min-width: 1200px;
   min-height: 330px;
 }
 
 .features-item {
-  width: 33.4%;
+  width: 33.333333%;
   min-height: 258px;
 }
 
@@ -297,9 +298,15 @@ h1 {
 
 .booking {
   box-sizing: border-box;
-  position: relative;
-  min-height: 293px;
 
+}
+
+.booking-button {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 568px;
+  height: 86px;
 }
 
 .booking h3 {
@@ -355,26 +362,36 @@ h1 {
 
 .filter-hotel {
   color: #ffffff;
+  min-height: 215px;
   background-color: #414a51;
   background-image: url("../img/bg-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.hotels {
+  padding: 0 6%;
+}
+
 .sorting-hotel-list {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid red;
 }
 
 .sorting {
   display: flex;
-  margin-left: 457px;
+  flex-grow: 1;
+
 }
 
-.hotels h3 {
+.found-hotels {
   font-size: 21px;
   font-weight: bold;
+  flex-shrink: 0;
+}
+
+.hotels .pointer {
+  width: 65px;
 }
 
 .hotels > p {
@@ -410,8 +427,30 @@ h1 {
 }
 
 .hotel-list li {
+  display: flex;
   width: 100%;
-  outline: 2px solid black;
+
+}
+
+.hotel-list > li {
+    min-height: 150px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.hotel-list >li:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-image {
+  width: 165px;
+}
+
+.hotel-info {
+  flex-grow: 1;
+}
+
+.rating-hotel {
+  width: 130px;
 }
 
 .rating-hotel .rating {
@@ -434,11 +473,19 @@ h1 {
 }
 
 .hotels .hotel-name:active {
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.visitsedona a {
+.visitsedona {
   color: #000000;
+}
+
+.main-footer-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .main-footer {
@@ -447,14 +494,15 @@ h1 {
 }
 
 .hashtag-sedona {
-  width: 33.3%;
+  width: 33.3333333%;
   font-size: 21px;
+  color: #000000;
   font-weight: bold;
   text-align: center;
 }
 
 .footer-social {
-  width: 33.3%
+  width: 33.333333%
 }
 
 .main-footer .social-list {
@@ -466,6 +514,6 @@ h1 {
 }
 
 .footer-copyright {
-  width: 33.3%;
+  width: 33.333333%;
   text-align: center;
 }
