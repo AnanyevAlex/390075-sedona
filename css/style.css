@@ -11,14 +11,13 @@ body {
 
 .container {
   position: relative;
-  max-width: 1200px;
+  max-width: 1600px;
   min-width: 768px;
   margin: 0 auto;
 }
 
 a {
   text-decoration: none;
-
 }
 
 .visually-hidden {
@@ -103,7 +102,6 @@ a {
   position: relative;
   height: 56px;
   width: 100%;
-  max-width: 1200px;
   font-size: 14px;
   color: #000000;
   line-height: 26px;
@@ -153,7 +151,7 @@ a {
 }
 
 .site-nav a:active {
-  color: rgba(0, 0, 0, 0.302)
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .site-nav .actived {
@@ -234,13 +232,12 @@ h1 {
   background-size: cover;
   margin: 0;
   padding: 0;
-  width: 66.666666%;
-
+  width: 66.66666%;
 }
 
 .reason-blue {
   text-align: center;
-  width: 33%;
+  width: 33.333333%;
 
 }
 
@@ -263,12 +260,10 @@ h1 {
 
 .features-list {
   display: flex;
-  min-width: 768px;
-  min-width: 1200px;
   min-height: 330px;
 }
 
-.features-item {
+.feature-item {
   width: 33.333333%;
   min-height: 258px;
 }
@@ -298,7 +293,6 @@ h1 {
 
 .booking {
   box-sizing: border-box;
-
 }
 
 .booking-button {
@@ -355,9 +349,8 @@ h1 {
 }
 
 .map {
-  min-width: 900px;
-  max-width: 1200px;
-  min-width: 595px;
+  width: 100%;
+  min-height: 595px;
 }
 
 .filter-hotel {
@@ -367,10 +360,6 @@ h1 {
   background-image: url("../img/bg-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hotels {
-  padding: 0 6%;
 }
 
 .sorting-hotel-list {
@@ -429,6 +418,8 @@ h1 {
 .hotel-list li {
   display: flex;
   width: 100%;
+  padding: 0 6%;
+
 
 }
 
