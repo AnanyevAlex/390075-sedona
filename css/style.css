@@ -11,7 +11,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 1600px;
+  max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
 }
@@ -20,9 +20,30 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-    display: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .button {
   font: inherit;
@@ -105,23 +126,26 @@ a {
   font-size: 14px;
   color: #000000;
   line-height: 26px;
+  vertical-align: center;
 }
 
 .site-nav {
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  margin: 0 6%;
-  padding: 0;
+  margin: 0;
+  padding: 15px 6%;
   list-style: none;
 }
 
 .site-nav li {
   width: 20%;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav li:nth-child(1),
-.site-nav li:nth-child(1) {
+.site-nav li:nth-child(2) {
   text-align: left;
 
 }
@@ -132,7 +156,7 @@ a {
 
 .main-header-logo {
   width: 140px;
-  height: 50px;
+  height: 70px;
   position: absolute;
   top: 0;
   right: 0;
@@ -159,8 +183,7 @@ a {
 }
 
 .sedona {
-  height: 509px;
-  padding: 80px;
+  padding: 77px;
   text-align: center;
   background-image: url("../img/bg-sedona.jpg");
   background-size: cover;
@@ -183,7 +206,7 @@ a {
 
 h1 {
   margin-top: 60px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -192,6 +215,7 @@ h1 {
 .reasons {
   color: rgb(51, 51, 51);
   text-align: center;
+  margin: 0;
 }
 
 
@@ -213,7 +237,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-
 .reason-image {
   display: flex;
   width: 100%;
@@ -226,6 +249,11 @@ h1 {
   background-color: #eeeeee;
 }
 
+.reason-item p {
+  padding: 0 16%;
+  margin: 28px auto;
+}
+
 .reason-one-image {
   background-image: url("../img/city.jpg");
   background-repeat: no-repeat;
@@ -236,9 +264,49 @@ h1 {
 }
 
 .reason-blue {
+  line-height: 21px;
   text-align: center;
   width: 33.333333%;
+}
 
+.reason-blue h3 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 31%;
+  margin-right: 31%;
+  margin-bottom: 0;
+}
+
+.reason-blue .reason-number {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 22px;
+}
+.reason-blue p {
+  margin: 0;
+  margin-left: 13%;
+  margin-right: 14%;
+}
+
+.reason-blue .reason-number::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 42%;
+  width: 8px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.reason-blue .reason-number::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 55%;
+  width: 8px;
+  height: 1px;
+  background-color: #ffffff;
 }
 
 .reason-two-image {
@@ -260,16 +328,56 @@ h1 {
 
 .features-list {
   display: flex;
-  min-height: 330px;
+
 }
 
 .feature-item {
+  position: relative;
   width: 33.333333%;
-  min-height: 258px;
+}
+
+.feature-item h3 {
+  margin-top: 155px;
+  margin-bottom: 25px;
+}
+
+.feature-item p {
+  margin: 0 12% 85px 12%;
+}
+
+.feature-item::before {
+  content: "";
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+}
+
+.feature-item:first-child::before {
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+}
+
+.feature-item:nth-child(2)::before {
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+}
+
+.feature-item:last-child::before {
+  background-image: url("../img/icon-suvenir.svg");
+  background-repeat: no-repeat;
+  left: 3px;
 }
 
 .reason-image {
   width: 100%
+}
+
+.features-item {
+  width: 100%;
 }
 
 .reason-item,
@@ -321,7 +429,7 @@ h1 {
 
 .main-booking-form {
   position: absolute;
-  bottom: -394px;
+  top: 100%;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -476,7 +584,7 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer {
