@@ -388,8 +388,8 @@ h1 {
 }
 
 .feature-item p {
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 .feature-item::before {
@@ -510,6 +510,8 @@ h1 {
 }
 
 .input-form button {
+  padding: 0;
+  margin: 0;
   font-size: 0;
   width: 25px;
   height: 25px;
@@ -556,38 +558,62 @@ h1 {
 .input-arrival-date button,
 .input-departure-date button {
   position: absolute;
-  right: 10px;
+  right: 5px;
   top: 8px;
 }
 
 .input-people {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 55px;
-}
-
-.input-people input {
-  width: 115px;
-  margin-left: 35px;
-  padding-left: 53px;
   box-sizing: border-box;
 }
 
-.input-people .kids {
-  margin-left: 49px;
+.btn-input {
+  display: flex;
 }
 
-.input-people .input-kids {
-  width: 110px;
-  margin-left: 24px;
+.btn-input-grown {
+  margin-right: 13px;
+}
+
+.btn-input-grown input {
+  width: 22px;
+  height: 38px;
+  padding-left: 14px;
+}
+
+.btn-input-grown label{
+  padding-right: 38px;
+  align-self: center;
+}
+
+.btn-input-kid label{
+  padding-right: 27px;
+  align-self: center;
+}
+
+.btn-input-kid input {
+  width: 31px;
+  height: 40px;
+  margin: 0;
+  padding-left: 12px;
+  box-sizing: border-box;
 }
 
 .input-people button {
-  position: absolute;
-  background-color: inherit;
+  background-color: #f2f2f2;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
   font-size: 20px;
   font-weight: bold;
   padding-top: 3px;
   color: #a9a9a9;
+  box-sizing: border-box;
 }
 
 .amount-down:hover,
@@ -598,26 +624,6 @@ h1 {
 .amount-down:active,
 .amount-up:active {
   color: #81b3d2;
-}
-
-.input-people .amount-down-grownup {
-  top: 6px;
-  left: 117px;
-}
-
-.input-people .amount-up-grownup {
-  top: 6px;
-  left: 194px;
-}
-
-.input-people .amount-down-kid {
-  top: 6px;
-  right: 80px;
-}
-
-.input-people .amount-up-kid {
-  top: 6px;
-  right: 4px;
 }
 
 .main-booking-form input:hover {
@@ -696,25 +702,26 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   width: 25px;
   height: 24px;
-  top: 3px;
   left: -40px;
+  top: 3px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-
 }
 
 .f-grow {
+  display: flex;
   flex-grow: 1;
 }
 
 .filter-range {
   margin-top: 28px;
   margin-right: 6%;
+  margin-left: 10%;
   width: 320px;
   color: #ffffff;
   text-transform: uppercase;
@@ -829,14 +836,14 @@ h1 {
   background: #ffffff;
 }
 
-.breadcrumbs {
+.hotels-filter {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 10px 6% 7px 6%;
 }
 
-.breadcrumbs > p {
+.hotels-filter > p {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -955,7 +962,7 @@ h1 {
 }
 
 .hotel-info p {
-  margin-top: 9px;
+  margin-top: 5px;
   display: inline-block;
   text-align: left;
 }
@@ -978,6 +985,11 @@ h1 {
 
 .rating-hotel {
   width: 130px;
+}
+
+.rating-hotel .star {
+  background-image: url("../img/icon-star.svg");
+  background-repeat: no-repeat;
 }
 
 .rating-star {
@@ -1095,10 +1107,19 @@ h1 {
 }
 
 .footer-copyright {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 33.333333%;
-  padding-top: 45px;
   text-align: center;
+}
+
+.footer-copyright svg {
+  margin-left: 8px;
+}
+
+.footer-copyright p {
+  padding-bottom: 5px;
 }
 
 .footer-copyright:hover path,
