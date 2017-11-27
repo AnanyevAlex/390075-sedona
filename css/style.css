@@ -7,6 +7,7 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -14,8 +15,8 @@ body {
   max-width: 1200px;
   min-width: 768px;
   margin: 0 auto;
-  box-shadow: -46px 0 0 #f2f2f2,
-              46px 0 0 #f2f2f2;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px -3px #000101;
 }
 
 a {
@@ -636,8 +637,15 @@ h1 {
 }
 
 .map {
+  padding: 0;
+  margin: 0;
   width: 100%;
   min-height: 595px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
 }
 
 .filter-hotel {
@@ -839,8 +847,9 @@ h1 {
 .hotels-filter {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
-  margin: 10px 6% 7px 6%;
+  margin: 0 6%;
 }
 
 .hotels-filter > p {
@@ -852,20 +861,27 @@ h1 {
 .sorting {
   display: flex;
   flex-grow: 1;
-  margin-left: 48px;
-  margin-top: 22px;
+  margin: 29px 0;
   font-size: 12px;
+  padding: 0;
 }
 
 .sorting li {
   margin-right: 36px;
 }
 
+.sorting .find-hotel {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
 .pointer {
   font-size: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 8px;
   width: 35px;
   height: 20px;
 }
