@@ -57,6 +57,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
   border: none;
 }
 
@@ -270,13 +271,48 @@ h1 {
   box-sizing: border-box;
 }
 
+.reason-item-number {
+  position: relative;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.reason-item-number p {
+  padding: 2px 0;
+  margin: 0
+}
+
+.reason-item-number p::before,
+.reason-item-number p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 10px;
+  background-color: #979797;
+}
+
+.reason-item-number p::before {
+  left: 0;
+}
+
+.reason-item-number p::after {
+  right: 0;
+}
+
+.reason-white-number p::before,
+.reason-white-number p::after {
+  background-color: #fff;
+}
+
 .reason-item h3 {
   margin-left: 31%;
   margin-right: 31%;
 }
 
 .reason-item p {
-  padding-top: 5px;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -306,16 +342,6 @@ h1 {
   margin-right: 31%
 }
 
-.reason-blue .reason-number {
-  position: relative;
-  margin-top: 25px;
-  margin-bottom: 22px;
-}
-
-.reason-blue-one .reason-number {
-  margin-left: 56px;
-}
-
 .reason-blue-one p {
   margin: 0;
   margin-left: 13%;
@@ -333,26 +359,6 @@ h1 {
   margin: 0;
   margin-left: 12%;
   margin-right: 12%;
-}
-
-.reason-blue .reason-number::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 42%;
-  width: 8px;
-  height: 1px;
-  background-color: #ffffff;
-}
-
-.reason-blue .reason-number::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 55%;
-  width: 8px;
-  height: 1px;
-  background-color: #ffffff;
 }
 
 .reason-two-image {
@@ -504,6 +510,7 @@ h1 {
 .main-booking-form label{
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .input-form {
@@ -525,7 +532,8 @@ h1 {
   fill: #cacaca;
 }
 
-.calendar:hover path {
+.calendar:hover path,
+.calendar:focus path {
   fill: #000;
 }
 
@@ -560,6 +568,7 @@ h1 {
   position: absolute;
   right: 5px;
   top: 8px;
+  cursor: pointer;
 }
 
 .input-people {
@@ -587,11 +596,13 @@ h1 {
 .btn-input-grown label{
   padding-right: 38px;
   align-self: center;
+
 }
 
 .btn-input-kid label{
   padding-right: 27px;
   align-self: center;
+
 }
 
 .btn-input-kid input {
@@ -600,6 +611,7 @@ h1 {
   margin: 0;
   padding-left: 12px;
   box-sizing: border-box;
+
 }
 
 .input-people button {
@@ -613,11 +625,14 @@ h1 {
   font-weight: bold;
   padding-top: 3px;
   color: #a9a9a9;
+  cursor: pointer;
   box-sizing: border-box;
 }
 
 .amount-down:hover,
-.amount-up:hover {
+.amount-up:hover,
+.amount-down:focus,
+.amount-up:focus {
   color: #000;
 }
 
@@ -665,9 +680,10 @@ h1 {
 
 .filter-checkbox {
   margin-top: 22px;
-  margin-right: 52px;
+  margin-right: 7%;
+  padding-bottom: 0;
   text-align: left;
-  width: 180px;
+  width: 24%;
   font-size: 14px;
   border: none;
 }
@@ -682,7 +698,7 @@ h1 {
 .filter-checkbox ul {
   list-style: none;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 14px;
   padding: 0;
 }
 
@@ -709,6 +725,12 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox:focus + label::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
@@ -723,13 +745,13 @@ h1 {
 .f-grow {
   display: flex;
   flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .filter-range {
   margin-top: 28px;
   margin-right: 6%;
-  margin-left: 10%;
-  width: 320px;
+  width: 28%;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -771,8 +793,8 @@ h1 {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 81px;
-  padding-left: 65px;
+  width: 26%;
+  padding-left: 20%;
 }
 
 .price-controls input {
@@ -826,8 +848,9 @@ h1 {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 30px;
+  font: inherit;
+  margin-left: 85px;
+  padding: 6px 32px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -860,7 +883,8 @@ h1 {
 .sorting {
   display: flex;
   flex-grow: 1;
-  margin: 29px 0;
+  margin-top: 32px;
+  margin-bottom: 30px;
   font-size: 12px;
   padding: 0;
 }
@@ -1135,6 +1159,10 @@ h1 {
 
 .footer-copyright p {
   padding-bottom: 5px;
+}
+
+.copyright-text {
+  padding-bottom: 10px;
 }
 
 .footer-copyright:hover path,
