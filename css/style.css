@@ -492,7 +492,8 @@ h1 {
   width: 568px;
   height: 396px;
   background-color: #ffffff;
-  padding: 53px 10%;
+  padding: 53px 9.5% 53px 10%;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
 
@@ -555,7 +556,7 @@ h1 {
 
 .input-arrival-date input {
   width: 330px;
-  margin-left: 19px;
+  margin-left: 18px;
 }
 
 .input-departure-date input {
@@ -566,7 +567,7 @@ h1 {
 .input-arrival-date button,
 .input-departure-date button {
   position: absolute;
-  right: 5px;
+  right: 8px;
   top: 8px;
   cursor: pointer;
 }
@@ -600,7 +601,7 @@ h1 {
 }
 
 .btn-input-kid label{
-  padding-right: 27px;
+  padding-right: 29px;
   align-self: center;
 
 }
