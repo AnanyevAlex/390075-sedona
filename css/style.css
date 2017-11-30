@@ -36,15 +36,12 @@ svg {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -75,32 +72,32 @@ input[type="radio"].visually-hidden {
 }
 
 .button-booking {
-  height: 25px;
   width: 140px;
+  height: 25px;
   padding: 0;
   background-color: #766357;
 }
 
 .button-find {
+  width: 458px;
+  height: 58px;
   font-size: 21px;
   line-height: 26px;
   background-color: #81b3d2;
-  width: 458px;
-  height: 58px;
 }
 
 .button-more {
-  height: 25px;
   width: 110px;
+  height: 25px;
   padding: 0;
   background-color: #81b3d2;
 }
 
 .button-show {
-  background-color: transparent;
-  border: 2px solid #ffffff;
   width: 141px;
   height: 40px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
 }
 
 .button-show:hover {
@@ -132,8 +129,8 @@ input[type="radio"].visually-hidden {
 
 .main-nav {
   position: relative;
-  height: 56px;
   width: 100%;
+  height: 56px;
   font-size: 14px;
   color: #000000;
   line-height: 26px;
@@ -1102,14 +1099,14 @@ h1 {
 
 .footer-social {
   width: 33.333333%;
-  padding-top: 20px;
-  padding-left: 7%;
   text-align: center;
   box-sizing: border-box;
 }
 
 .footer-social ul {
   display: flex;
+  margin: 0 auto;
+  padding: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
@@ -1118,6 +1115,7 @@ h1 {
 .main-footer .social-list {
   list-style: none;
   text-align: center;
+  margin-top: 35px;
 }
 
 .social-button {
@@ -1166,11 +1164,11 @@ h1 {
   padding-bottom: 10px;
 }
 
-.footer-copyright:hover path,
-.footer-copyright:focus path {
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
   fill: #81b3d2;
 }
 
-.footer-copyright:active path {
+.footer-copyright a:active path {
   fill: #bdbbbc;
 }
