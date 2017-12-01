@@ -263,7 +263,7 @@ h1 {
   width: 33.333333%;
   background-color: #eeeeee;
   padding-top: 25px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   box-sizing: border-box;
 }
 
@@ -326,7 +326,7 @@ h1 {
   line-height: 21px;
   text-align: center;
   width: 33.333333%;
-  padding-top: 26px;
+  padding-top: 30px;
   padding-bottom: 58px;
   box-sizing: border-box;
 }
@@ -382,7 +382,7 @@ h1 {
   position: relative;
   width: 33.333333%;
   padding-top: 140px;
-  padding-bottom: 65px;
+  padding-bottom: 70px;
   box-sizing: border-box;
 }
 
@@ -450,7 +450,7 @@ h1 {
 }
 
 .booking {
-  padding-top: 50px;
+  padding-top: 51px;
   box-sizing: border-box;
 
 }
@@ -489,6 +489,7 @@ h1 {
   height: 396px;
   background-color: #ffffff;
   padding: 53px 9.5% 53px 10%;
+  z-index: 5;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
@@ -522,20 +523,29 @@ h1 {
   height: 25px;
   border: none;
   outline: none;
-  background-color: inherit;
+
+  background-color: transparent;
+
 }
 
 .calendar path {
   fill: #cacaca;
+
 }
 
 .calendar:hover path,
 .calendar:focus path {
   fill: #000;
+
 }
 
 .calendar:active path {
   fill: #81b3d2;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
 }
 
 .input-form img {
@@ -648,16 +658,34 @@ h1 {
 }
 
 .map {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 100%;
   min-height: 595px;
 }
 
+.map p {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.map iframe {
+  position: relative;
+  border: none;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
 .map img {
   width: 100%;
   height: auto;
 }
+
 
 .filter-hotel {
   color: #ffffff;
@@ -700,8 +728,8 @@ h1 {
 }
 
 .filter-options{
-    margin-bottom: 21px;
-    padding-left: 40px;
+  margin-bottom: 21px;
+  padding-left: 40px;
 }
 
 .filter-options label {
@@ -877,24 +905,29 @@ h1 {
   font-weight: bold;
 }
 
+.find-hotel {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-right: 39px;
+}
+
+.find-hotel span {
+  font-size: 12px;
+  padding-left: 42px;
+}
+
 .sorting {
   display: flex;
   flex-grow: 1;
   margin-top: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-size: 12px;
   padding: 0;
 }
 
 .sorting li {
-  margin-right: 36px;
-}
-
-.sorting .find-hotel {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  margin-right: 50px;
+  margin-right: 33px;
 }
 
 .pointer {
@@ -998,7 +1031,7 @@ h1 {
 }
 
 .hotel-info p {
-  margin-top: 5px;
+  margin-top: 6px;
   display: inline-block;
   text-align: left;
 }
@@ -1073,6 +1106,7 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 4;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
